@@ -2,44 +2,46 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   h1 {
-    align-items: center;
-    margin: 4rem 0;
+    text-align: center;
+    margin: 2.5rem 0 2.5rem -2rem;
   }
 `;
 
 export const MoviesList = styled.ul`
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax (200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
   column-gap: 3rem;
   row-gap: 4rem;
+
+  span{
+    font-weight: bold;
+    font-size: 120%;
+    margin-left: -2rem;
+    text-align: center;
+    max-width: 15.5rem;
+ 
+}
+
 `;
 
 export const Movie = styled.li`
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
+display: flex;
+flex-direction: column;
+aling-items: center;
 
 img{
-    width: 180px;
-    border-radius: 1rem
-    margin-bottom: 2rem;
-
+width: 180px;
+border-radius: 1rem;
+margin-bottom: 2px;
 }
 
-span{
-    font-weight: bold;
-    fort-size: 120px;
-    text-align: center;
-}
-a{
-    transition; all 0.3s;
-}
-a:hover{
-    tarnsform: scale(1.1);
-}
+ a{
+transition; all 1.5s;
+ }
 
-`;
+ a:hover{
+   transform: scale(1.05);
+   margin-bottom: 5px;
+ }
+ `
